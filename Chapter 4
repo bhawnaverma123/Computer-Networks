@@ -1,0 +1,440 @@
+Chapter 4: Network Devices
+
+This is one of the most important chapters in networking because these are the physical devices that make communication possible.
+
+If you understand this chapter thoroughly, you will be able to answer many networking interview questions and understand how data moves through a network.
+
+What Are Network Devices?
+
+A network device is a hardware component that helps connect devices, forward data, improve communication, or provide security.
+
+Think of a city:
+
+Roads → Network cables
+Traffic signals → Switches
+Highways → Routers
+Security checkpoints → Firewalls
+
+Without these, transportation would be chaotic. Similarly, without network devices, computers cannot communicate efficiently.
+
+Devices We'll Cover
+Hub
+Switch
+Router
+Modem
+Access Point (AP)
+Bridge
+Repeater
+Gateway
+Firewall
+Overview
+Device	Main Purpose	OSI Layer
+Hub	Broadcast data to all devices	Layer 1
+Switch	Send data only to the correct device	Layer 2
+Router	Connect different networks	Layer 3
+Modem	Connect your network to the ISP	Layer 1/2
+Access Point	Provide wireless connectivity	Layer 2
+Bridge	Connect LAN segments	Layer 2
+Repeater	Regenerate weak signals	Layer 1
+Gateway	Connect different types of networks	Layer 3–7 (depends on implementation)
+Firewall	Filter and secure traffic	Layer 3–7 (depends on type)
+1. Hub
+Definition
+
+A Hub is a simple networking device that connects multiple computers.
+
+It does not know where the data should go.
+
+Whenever it receives data, it copies and sends it to every connected device.
+
+Think of it as someone shouting a message in a classroom.
+
+Diagram
+          Hub
+      /    |    \
+    PC1   PC2   PC3
+How Does It Work?
+
+Suppose:
+
+PC1 wants to send data to PC3.
+
+Instead of sending only to PC3, the hub sends the data to:
+
+PC2
+PC3
+
+Both receive it.
+
+PC3 accepts it.
+
+PC2 ignores it.
+
+Real-Life Example
+
+Imagine a teacher shouting:
+
+"Rahul, come here."
+
+Everyone hears it.
+
+Only Rahul responds.
+
+The hub works exactly like this.
+
+Advantages
+Cheap
+Easy to install
+Simple design
+Disadvantages
+Slow
+Many collisions
+Poor security
+Broadcasts to every device
+Not used in modern enterprise networks
+Cybersecurity Perspective
+
+Because hubs broadcast traffic to every connected device, someone connected to the hub can potentially capture traffic intended for others using tools like Wireshark.
+
+2. Switch
+
+A Switch is an intelligent version of a hub.
+
+Instead of sending data to everyone, it sends data only to the intended destination.
+
+Diagram
+             Switch
+         /     |      \
+      PC1     PC2     PC3
+How Does It Know Where to Send Data?
+
+Every device has a MAC Address.
+
+The switch builds a MAC Address Table.
+
+Example:
+
+MAC Address	Port
+AA:11	Port 1
+BB:22	Port 2
+CC:33	Port 3
+
+Suppose:
+
+PC1 sends data to PC3.
+
+The switch checks its MAC table.
+
+It finds:
+
+PC3 → Port 3
+
+The switch sends the data only through Port 3.
+
+PC2 never receives the frame.
+
+Real-Life Example
+
+Imagine a post office.
+
+A letter addressed to "House No. 15" is delivered only to that house.
+
+The post office doesn't deliver copies to every house on the street.
+
+The switch behaves the same way.
+
+Advantages
+Fast
+Intelligent
+Fewer collisions
+Better security
+Efficient bandwidth usage
+Disadvantages
+More expensive than a hub
+Requires configuration in larger environments
+Cybersecurity Perspective
+
+Switches support features like:
+
+Port Security
+VLANs
+MAC filtering
+Monitoring (SPAN/Mirror ports)
+
+These are widely used in enterprise networks.
+
+Hub vs Switch
+Hub	Switch
+Broadcasts to everyone	Sends only to the destination
+Layer 1	Layer 2
+Slower	Faster
+Less secure	More secure
+Doesn't learn addresses	Learns MAC addresses
+3. Router
+
+A Router connects different networks.
+
+It uses IP Addresses to decide where packets should go.
+
+Example
+
+Your home network:
+
+Laptop
+Phone
+TV
+Printer
+      |
+    Router
+      |
+   Internet
+
+The router connects your home LAN to the Internet.
+
+How Does It Work?
+
+Suppose:
+
+Your laptop opens:
+
+www.google.com
+
+Steps:
+
+Laptop creates the request.
+Request goes to the router.
+Router checks the destination IP address.
+Router forwards the packet toward your ISP.
+The ISP forwards it through the Internet until it reaches Google's servers.
+Real-Life Example
+
+Imagine a courier company.
+
+A parcel needs to go from Delhi to Mumbai.
+
+The courier checks the destination and chooses the appropriate route.
+
+A router does the same thing for network traffic.
+
+Advantages
+Connects multiple networks
+Connects to the Internet
+Chooses efficient paths
+Supports security features
+Can perform NAT (Network Address Translation)
+Cybersecurity Perspective
+
+Routers often include:
+
+Access Control Lists (ACLs)
+NAT
+VPN support
+Basic firewall functions
+Switch vs Router
+Switch	Router
+Connects devices in the same network	Connects different networks
+Uses MAC Address	Uses IP Address
+Layer 2	Layer 3
+4. Modem
+Definition
+
+A Modem connects your home or office network to your Internet Service Provider (ISP).
+
+The word Modem comes from:
+
+MOdulator
+DEModulator
+Why Is It Needed?
+
+Your ISP sends signals over media such as fiber, cable, or DSL. The modem converts these signals into a form your router or computer can use, and vice versa.
+
+Home Network Example
+Internet
+
+↓
+
+ISP
+
+↓
+
+Modem
+
+↓
+
+Router
+
+↓
+
+Laptop
+Phone
+TV
+
+Many home devices combine the modem, router, switch, and Wi-Fi access point into one unit.
+
+5. Access Point (AP)
+
+An Access Point provides wireless connectivity to devices.
+
+Example
+
+Your office has:
+
+100 employees
+Wi-Fi throughout the building
+
+Access Points allow laptops and phones to connect wirelessly to the wired network.
+
+Diagram
+          Access Point
+
+      📱   💻   📲
+
+           |
+
+        Switch
+
+           |
+
+        Internet
+Cybersecurity Perspective
+
+Wi-Fi security commonly includes:
+
+WPA2
+WPA3
+Strong passwords
+Network segmentation for guest users
+6. Bridge
+
+A Bridge connects two LAN segments.
+
+It filters traffic based on MAC addresses so unnecessary traffic doesn't cross between segments.
+
+Example
+
+Imagine one office floor is split into two sections.
+
+Instead of one large network, a bridge connects the two smaller LAN segments and forwards only the necessary traffic.
+
+7. Repeater
+
+A Repeater regenerates weak network signals.
+
+Example
+
+If a network cable is too long, the signal becomes weaker.
+
+A repeater strengthens (regenerates) the signal so it can travel farther.
+
+Real-Life Analogy
+
+Imagine shouting across a large field.
+
+Someone standing in the middle repeats your message loudly so people farther away can hear it.
+
+8. Gateway
+
+A Gateway connects networks that use different protocols or architectures.
+
+It can translate data so systems that "speak different languages" can communicate.
+
+Example
+
+An organization may need to connect a modern IP network to a legacy industrial system.
+
+A gateway translates between the two.
+
+Real-Life Analogy
+
+Imagine two people:
+
+One speaks English.
+One speaks Japanese.
+
+A translator allows them to communicate.
+
+A gateway performs a similar role for networks.
+
+9. Firewall
+
+A Firewall protects a network by allowing or blocking traffic according to security rules.
+
+Example
+
+Suppose:
+
+A hacker tries to connect to your server.
+
+The firewall checks its rules.
+
+If the connection isn't allowed:
+
+Blocked ❌
+
+If it matches an allowed rule:
+
+Allowed ✅
+Real-Life Analogy
+
+Think of airport security.
+
+Passengers are checked before entering secure areas.
+
+The firewall checks network traffic before allowing it into your network.
+
+Types
+Packet Filtering Firewall
+Stateful Firewall
+Next-Generation Firewall (NGFW)
+Web Application Firewall (WAF)
+
+We'll study these in detail in a later chapter.
+
+Data Journey Through a Home Network
+
+Suppose you open:
+
+www.google.com
+
+The path looks like this:
+
+Laptop
+   │
+   ▼
+Wi-Fi Access Point
+   │
+   ▼
+Switch (often built into the router)
+   │
+   ▼
+Router
+   │
+   ▼
+Modem
+   │
+   ▼
+ISP
+   │
+   ▼
+Internet
+   │
+   ▼
+Google Server
+
+Each device has a specific role:
+
+Access Point: Connects your laptop wirelessly.
+Switch: Moves data within your local network.
+Router: Sends data to another network (the Internet).
+Modem: Connects your network to the ISP's service.
+Summary Table
+Device	Main Job	Uses
+Hub	Broadcasts data	Rarely used today
+Switch	Sends frames to the correct device	Homes, offices, campuses
+Router	Connects different networks	Home and enterprise networking
+Modem	Connects to the ISP	Internet access
+Access Point	Provides Wi-Fi	Wireless networking
+Bridge	Connects LAN segments	Network segmentation
+Repeater	Extends signal distance	Long cable runs
+Gateway	Translates between different networks/protocols	Specialized environments
+Firewall	Filters and protects traffic	Network security
