@@ -1,0 +1,196 @@
+Chapter 1: Introduction to Computer Networks
+What is a Computer Network?
+
+A computer network is a collection of two or more devices connected together so they can communicate and share resources.
+
+Think of it as a group of people connected by phones. Instead of people talking to each other, computers exchange data.
+
+Formal Definition
+
+A computer network is a system that connects computers and other devices using communication links and protocols to exchange data and share resources.
+
+Why Do We Need Networks?
+
+Imagine there were no networks.
+
+Suppose your college has:
+
+100 computers
+20 printers
+One internet connection
+
+Without networking:
+
+Every computer would need its own printer.
+Files would have to be copied using USB drives.
+Internet could not be shared.
+Collaboration would be difficult.
+
+Networking solves these problems.
+
+Benefits of Networking
+Share files
+Share printers
+Share internet connection
+Send emails
+Video conferencing
+Cloud storage
+Online gaming
+Remote work
+Access websites
+Real-Life Examples
+Example 1: Home Wi-Fi
+
+Your home has:
+
+Laptop
+Mobile phone
+Smart TV
+Alexa
+CCTV camera
+
+All connect to the same Wi-Fi router.
+
+This creates a Local Area Network (LAN).
+
+When your laptop accesses the internet, the data travels through the router to your Internet Service Provider (ISP), then to the destination server, and the response comes back the same way.
+
+Example 2: College Network
+
+A college may have:
+
+2,000 computers
+Servers
+Printers
+Attendance system
+Library system
+
+All are connected through switches and routers.
+
+Students can:
+
+Access the library
+Download notes
+Use the internet
+Print documents
+Example 3: Banking
+
+When you withdraw ₹500 from an ATM:
+
+The ATM sends a request through a network.
+The bank server checks your balance.
+If sufficient funds are available, the transaction is approved.
+The ATM dispenses cash.
+
+Without networking, online banking and ATMs would not work.
+
+What Can Be Connected?
+
+Almost anything that can communicate digitally:
+
+Desktop computers
+Laptops
+Mobile phones
+Tablets
+Servers
+Smart TVs
+Printers
+CCTV cameras
+IoT devices
+Routers
+Switches
+How Does Communication Happen?
+
+Imagine you send a WhatsApp message:
+
+"Hello"
+
+What happens behind the scenes?
+
+You type "Hello".
+Your phone converts it into digital data (bits).
+The data travels through your Wi-Fi or mobile network.
+It reaches WhatsApp's servers.
+The server forwards it to your friend's phone.
+Your friend's phone converts the data back into readable text.
+
+Although it feels instant, several networking technologies and protocols work together to make it happen.
+
+Components of a Network
+
+A basic network has five main components:
+
+Sender – The device that sends data (e.g., your laptop).
+Receiver – The device that receives data (e.g., a web server).
+Transmission Medium – The path the data travels (cable, Wi-Fi, fiber optic, etc.).
+Data – The actual information being sent (text, image, video, etc.).
+Protocol – The rules that both devices follow to communicate.
+Real-Life Analogy: Sending a Letter
+
+Imagine you send a letter to a friend.
+
+Letter System	Computer Network
+You	Sender
+Friend	Receiver
+Road	Transmission Medium
+Letter	Data
+Postal Rules	Protocol
+
+If either you or the postal service ignores the rules (wrong address, missing stamp), the letter may never arrive. Similarly, devices must follow networking protocols to communicate successfully.
+
+Example: Opening Google
+
+Suppose you open your browser and type:
+
+www.google.com
+
+Behind the scenes:
+
+Your computer connects to the router.
+The router forwards the request to your ISP.
+A DNS server translates www.google.com into an IP address.
+Your request is sent to Google's server.
+Google's server processes the request.
+The webpage is sent back to your browser.
+
+All of this typically happens in a fraction of a second.
+
+Where is Networking Used?
+
+Networking is used almost everywhere:
+
+Banks
+Hospitals
+Schools and universities
+Government offices
+Airports
+Shopping websites
+Cloud computing
+Social media
+Smart homes
+Industrial automation
+Networking and Cybersecurity
+
+Networking is the foundation of cybersecurity.
+
+As a SOC analyst, you'll regularly analyze:
+
+Source and destination IP addresses
+Port numbers
+Network protocols (HTTP, DNS, TCP, etc.)
+Firewall logs
+Packet captures (PCAPs)
+IDS/IPS alerts
+
+Without understanding networking, it's difficult to investigate security incidents effectively.
+
+Common Beginner Misconceptions
+
+Q: Is the Internet the same as a network?
+No. The Internet is a global network made up of millions of smaller networks.
+
+Q: Can one computer be called a network?
+No. A network requires at least two connected devices.
+
+Q: Is Wi-Fi the Internet?
+No. Wi-Fi is a wireless method of connecting devices to a network. You can have Wi-Fi without Internet access (for example, a local network for file sharing).
