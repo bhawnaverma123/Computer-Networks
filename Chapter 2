@@ -1,0 +1,211 @@
+Chapter 2: Types of Networks
+What Are Types of Networks?
+
+A network type is a way of classifying a network based on how large the area is and what it is used for.
+
+Think about transportation:
+
+Walking is for short distances.
+A car is for city travel.
+A train is for longer distances.
+An airplane is for international travel.
+
+Similarly, different network types are designed for different coverage areas.
+
+The most common types are:
+
+PAN – Personal Area Network
+LAN – Local Area Network
+CAN – Campus Area Network
+MAN – Metropolitan Area Network
+WAN – Wide Area Network
+SAN – Storage Area Network
+1. PAN (Personal Area Network)
+
+A Personal Area Network (PAN) connects devices belonging to one person over a very short distance, usually within 10 meters.
+
+Examples
+Phone connected to Bluetooth earbuds.
+Smartwatch connected to a phone.
+Laptop connected to a wireless mouse.
+Bluetooth keyboard connected to a tablet.
+Real-Life Example
+
+You're listening to music:
+
+Your phone stores the song.
+The song is sent via Bluetooth.
+Your earbuds receive and play it.
+
+This creates a PAN.
+
+Technologies Used
+Bluetooth
+NFC (Near Field Communication)
+USB
+Infrared (older technology)
+Advantages
+Easy to set up.
+Low power consumption.
+Inexpensive.
+Disadvantages
+Very short range.
+Supports only a few devices.
+Lower speed than larger networks.
+Cybersecurity Note
+
+Bluetooth devices can be vulnerable if left discoverable. Keeping Bluetooth off when not needed reduces unnecessary exposure.
+
+2. LAN (Local Area Network)
+
+A Local Area Network (LAN) connects devices within a small geographic area, such as a home, school, office, or computer lab.
+
+Examples
+Home Wi-Fi.
+College computer lab.
+Office network.
+School network.
+Real-Life Example
+
+Imagine your college lab has:
+
+40 computers
+2 printers
+1 server
+1 Internet connection
+
+All devices are connected through switches and a router, allowing file sharing, printing, and Internet access.
+
+This is a LAN.
+
+Technologies Used
+Ethernet cables
+Wi-Fi
+Switches
+Routers
+Advantages
+High speed.
+Easy resource sharing.
+Lower cost than larger networks.
+Easier management.
+Disadvantages
+Limited coverage area.
+Failure of key devices (like a switch) can affect many users.
+Cybersecurity Note
+
+Most organizations implement security controls inside LANs, such as VLANs, access controls, endpoint protection, and internal firewalls.
+
+3. CAN (Campus Area Network)
+
+A Campus Area Network (CAN) connects multiple LANs within a campus or organization.
+
+Examples
+University campus.
+Large hospital.
+Corporate campus.
+Research center.
+Real-Life Example
+
+A university has:
+
+Engineering building (LAN)
+Library (LAN)
+Administration building (LAN)
+Hostel (LAN)
+
+All these LANs are interconnected, forming a CAN.
+
+Advantages
+Centralized management.
+High-speed communication across the campus.
+Efficient sharing of servers and services.
+Disadvantages
+Higher installation cost.
+Requires skilled administrators.
+Cybersecurity Note
+
+Universities often separate student, faculty, guest, and administrative traffic using VLANs and network segmentation.
+
+4. MAN (Metropolitan Area Network)
+
+A Metropolitan Area Network (MAN) covers a city or large metropolitan region.
+
+Examples
+A city's cable TV network.
+Municipal government network.
+Bank branches across a city.
+Real-Life Example
+
+A bank has 25 branches across Delhi. Each branch has its own LAN, and all branches are connected using leased lines or fiber optics.
+
+Together, they form a MAN.
+
+Advantages
+Covers larger areas than LAN or CAN.
+High-speed communication between locations.
+Disadvantages
+More expensive to build and maintain.
+Requires advanced infrastructure.
+Cybersecurity Note
+
+Traffic between branches is often encrypted using VPNs to protect sensitive financial information.
+
+5. WAN (Wide Area Network)
+
+A Wide Area Network (WAN) connects networks over countries or continents.
+
+The Internet is the largest WAN in the world.
+Examples
+Internet.
+Global company networks.
+International bank networks.
+Cloud services.
+Real-Life Example
+
+Suppose a company has offices in:
+
+Delhi
+Mumbai
+London
+New York
+
+Each office has its own LAN, and all offices are securely connected over the Internet or private leased links.
+
+This forms a WAN.
+
+Advantages
+Global communication.
+Centralized access to applications and data.
+Supports remote work.
+Disadvantages
+Higher latency than LAN.
+More expensive.
+More complex to manage.
+Cybersecurity Note
+
+WAN security often includes VPNs, firewalls, intrusion detection systems (IDS), intrusion prevention systems (IPS), and continuous monitoring through SOC teams.
+
+6. SAN (Storage Area Network)
+
+A Storage Area Network (SAN) is a specialized high-speed network that connects servers to shared storage devices.
+
+Where Is It Used?
+Data centers.
+Cloud providers.
+Enterprise organizations.
+Benefits
+Fast access to storage.
+Centralized data management.
+High availability.
+Cybersecurity Note
+
+Since SANs often store critical business data, organizations use strong access controls, encryption, and backup strategies to protect them.
+
+Comparison Table
+Network Type	Coverage	Example
+PAN	Up to ~10 m	Phone ↔ Bluetooth earbuds
+LAN	Building or home	Home Wi-Fi, office
+CAN	Campus	University, hospital
+MAN	City	Bank branches across a city
+WAN	Country/World	Internet, multinational company
+SAN	Data center	Shared enterprise storage
