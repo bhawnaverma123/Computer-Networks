@@ -1,0 +1,315 @@
+Chapter 3: Network Topologies
+What is a Network Topology?
+
+A network topology is the arrangement or layout of devices (computers, switches, routers, etc.) and the connections between them.
+
+Think of it as the road map of a network.
+
+Real-Life Analogy
+
+Imagine a city:
+
+Roads connect houses.
+Different road designs affect traffic.
+If one road is blocked, some layouts handle it better than others.
+
+A computer network works the same way. The topology determines how devices communicate and how failures affect the network.
+
+Why Do We Need Different Topologies?
+
+Different organizations have different requirements.
+
+For example:
+
+A small office may use a Star Topology because it's easy to manage.
+A telecom provider may use a Mesh Topology for high reliability.
+An old Ethernet network might have used a Bus Topology.
+
+The choice depends on:
+
+Cost
+Reliability
+Performance
+Ease of maintenance
+Scalability
+Types of Network Topologies
+
+There are six major topologies:
+
+Bus Topology
+Star Topology
+Ring Topology
+Mesh Topology
+Tree Topology
+Hybrid Topology
+1. Bus Topology
+Definition
+
+In a Bus Topology, all devices share one common cable, called the backbone cable.
+
+Diagram
+Computer ----+
+             |
+Laptop ------+==================== Backbone Cable
+             |
+Printer -----+
+             |
+Server ------+
+
+Every device is connected to the same main cable.
+
+How Does It Work?
+
+Suppose Computer A wants to send data to Printer.
+
+Computer A sends the data onto the backbone cable.
+The data travels along the cable.
+Every connected device "sees" the data.
+Only the printer accepts it because the data contains the printer's address.
+Other devices ignore it.
+Real-Life Example
+
+Imagine a classroom where everyone shares one microphone.
+
+When one student speaks:
+
+Everyone hears the sound.
+Only the intended person responds.
+
+The microphone is like the backbone cable.
+
+Advantages
+Simple design.
+Low installation cost.
+Requires less cable.
+Easy to set up for small networks.
+Disadvantages
+If the backbone cable fails, the entire network stops working.
+Performance decreases as more devices are added.
+Difficult to troubleshoot.
+Data collisions are more likely.
+Cybersecurity Perspective
+
+If an attacker gains access to the shared medium, they may be able to capture traffic from multiple devices. Modern switched networks reduce this risk.
+
+2. Star Topology
+Definition
+
+In a Star Topology, every device connects to a central device, usually a switch.
+
+Diagram
+             PC 1
+               |
+               |
+PC 2 ------ Switch ------ PC 3
+               |
+               |
+             Server
+               |
+            Printer
+
+No device connects directly to another; all communication passes through the switch.
+
+How Does It Work?
+
+Suppose PC 1 wants to send data to the Printer.
+
+PC 1 sends the data to the switch.
+The switch checks the destination.
+The switch forwards the data only to the printer.
+
+Unlike a hub, a switch doesn't broadcast to every device.
+
+Real-Life Example
+
+Think of an airport.
+
+Passengers don't fly directly between every pair of cities. They often go through a central airport (hub) before reaching their destination.
+
+The switch acts like that central hub.
+
+Advantages
+Easy to install.
+Easy to troubleshoot.
+One cable failure affects only one device.
+High performance with switches.
+Easy to add new devices.
+Disadvantages
+If the central switch fails, the whole network is affected.
+More cable is required.
+Slightly higher cost.
+Cybersecurity Perspective
+
+Most modern organizations use Star Topology because switches support features like:
+
+VLANs
+Port security
+MAC address filtering
+Network monitoring
+
+These improve both security and performance.
+
+3. Ring Topology
+Definition
+
+In a Ring Topology, each device is connected to exactly two neighboring devices, forming a closed loop.
+
+Diagram
+        PC1 -------- PC2
+         |             |
+         |             |
+        PC4 -------- PC3
+How Does It Work?
+
+If PC1 sends data to PC3:
+
+PC1 → PC2 → PC3
+
+The data travels around the ring until it reaches the destination.
+
+Some ring networks use a token, a special control message that grants permission to transmit. Only the device holding the token can send data, which helps avoid collisions.
+
+Advantages
+Predictable performance.
+Fewer collisions (especially with token-based systems).
+Fair access to the network.
+Disadvantages
+One broken connection can disrupt the entire ring (unless redundancy is built in).
+Harder to expand.
+More difficult to troubleshoot than a star.
+Real-Life Example
+
+Imagine people standing in a circle passing a parcel to the next person until it reaches the intended recipient.
+
+4. Mesh Topology
+Definition
+
+In a Mesh Topology, devices have multiple paths to communicate with one another.
+
+There are two types:
+
+Full Mesh
+
+Every device connects directly to every other device.
+
+A -------- B
+|\        /|
+| \      / |
+|  \    /  |
+|   \  /   |
+|    \/    |
+|    /\    |
+|   /  \   |
+|  /    \  |
+| /      \ |
+|/        \|
+C -------- D
+Partial Mesh
+
+Only some devices have multiple direct connections.
+
+How Does It Work?
+
+If one connection fails, the data can take another route.
+
+Example:
+
+A → B → D
+If B fails:
+A → C → D
+Advantages
+Very reliable.
+High availability.
+No single communication path.
+Excellent fault tolerance.
+Disadvantages
+Expensive.
+Requires many cables and ports.
+Complex installation and maintenance.
+Real-Life Example
+
+The Internet is not one giant full mesh, but many parts of it use mesh-like connectivity so traffic can be rerouted around failures.
+
+Cybersecurity Perspective
+
+Mesh networks improve resilience. Even if one link is attacked or fails, communication can often continue through alternate paths.
+
+5. Tree Topology
+Definition
+
+A Tree Topology combines characteristics of Star and Bus topologies.
+
+Diagram
+             Core Switch
+                 |
+      -----------------------
+      |                     |
+ Department A         Department B
+      |                     |
+   --------             --------
+   |      |             |      |
+ PC1    PC2          PC3     PC4
+Real-Life Example
+
+A university network:
+
+Core switch in the data center.
+Separate switches for each building.
+End-user devices connected to those switches.
+
+This hierarchical design scales well.
+
+Advantages
+Highly scalable.
+Easier to organize large networks.
+Simple to manage by sections.
+Disadvantages
+If the core device fails, large parts of the network may become unavailable.
+More complex than a simple star.
+Cybersecurity Perspective
+
+Tree topologies allow network segmentation, making it easier to isolate departments and apply different security policies.
+
+6. Hybrid Topology
+Definition
+
+A Hybrid Topology combines two or more different topologies.
+
+Example
+
+A company may use:
+
+Star topology inside each office.
+Mesh links between data centers.
+Tree structure for campus distribution.
+Advantages
+Flexible.
+Scalable.
+Can be optimized for different environments.
+Disadvantages
+Complex design.
+Higher cost.
+Requires careful planning.
+Real-Life Example
+
+Large enterprises, cloud providers, and multinational companies almost always use hybrid topologies rather than relying on a single design.
+
+Comparison Table
+Topology	Cost	Reliability	Easy to Expand	Single Point of Failure
+Bus	Low	Low	No	Backbone cable
+Star	Medium	High	Yes	Central switch
+Ring	Medium	Medium	Difficult	Ring break (without redundancy)
+Mesh	High	Very High	Moderate	Very few
+Tree	Medium-High	High	Yes	Core device
+Hybrid	High	Very High	Excellent	Depends on design
+Which Topology Is Used Today?
+
+Modern networks commonly use:
+
+Homes: Star
+Schools and Colleges: Star + Tree
+Corporate Offices: Star
+Data Centers: Leaf-spine architectures (a specialized form of tree/mesh concepts)
+Internet Backbone: Highly redundant mesh-like connectivity
+
+Pure bus and ring topologies are now uncommon in new Ethernet deployments.
