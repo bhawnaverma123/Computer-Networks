@@ -1,0 +1,686 @@
+Chapter 6: Data Communication & Networking Concepts
+
+Welcome to Chapter 6.
+
+Till now, we learned:
+
+Chapter 1: What is a network?
+Chapter 2: Types of networks (PAN, LAN, WAN)
+Chapter 3: Network topologies
+Chapter 4: Network devices
+Chapter 5: Transmission media (how data travels)
+
+Now we will understand:
+
+How is data actually communicated between devices?
+
+This chapter builds the foundation for the OSI Model and TCP/IP Model, which are the heart of networking.
+
+1. What is Data Communication?
+Definition
+
+Data Communication is the exchange of data between two or more devices through a transmission medium.
+
+In simple words:
+
+When one device sends information and another device receives it, data communication happens.
+
+Example 1: Sending a WhatsApp Message
+
+You send:
+
+Hello
+
+Behind the scenes:
+
+Your Phone
+     |
+     |
+ Converts message into bits
+     |
+     |
+ Network
+     |
+     |
+ WhatsApp Server
+     |
+     |
+ Friend's Phone
+
+The message is converted into digital signals and transmitted through the network.
+
+Example 2: Opening a Website
+
+You type:
+
+www.google.com
+
+Communication happens:
+
+Your Computer
+
+      ↓
+
+Router
+
+      ↓
+
+ISP
+
+      ↓
+
+Internet
+
+      ↓
+
+Google Server
+
+      ↓
+
+Web Page Response
+
+This entire exchange is data communication.
+
+2. Components of Data Communication
+
+For successful communication, five components are required.
+
+1. Sender
+
+The device that sends data.
+
+Examples:
+
+Laptop
+Mobile phone
+Server
+
+Example:
+
+You sending an email.
+
+Sender = Your laptop
+
+2. Receiver
+
+The device that receives data.
+
+Examples:
+
+Another computer
+Mobile phone
+Server
+
+Example:
+
+Receiver = Friend's email server
+
+3. Message
+
+The actual information being transmitted.
+
+Examples:
+
+Text
+Image
+Video
+Audio
+Files
+
+Example:
+
+"Meeting at 5 PM"
+
+is the message.
+
+4. Transmission Medium
+
+The path through which data travels.
+
+Examples:
+
+Wired:
+
+Ethernet cable
+Fiber optic cable
+
+Wireless:
+
+Wi-Fi
+Bluetooth
+Satellite
+5. Protocol
+
+The rules that control communication.
+
+Examples:
+
+HTTP
+TCP
+IP
+DNS
+SMTP
+Real-Life Analogy: Phone Call
+
+Imagine calling your friend.
+
+Communication Component	Example
+Sender	You
+Receiver	Friend
+Message	Voice
+Medium	Mobile network
+Protocol	Rules of telephone communication
+
+Without rules, communication would fail.
+
+3. Characteristics of Effective Data Communication
+
+A good communication system should have:
+
+1. Delivery
+
+Data must reach the correct destination.
+
+Example:
+
+You send an email to:
+
+abc@gmail.com
+
+It should not reach:
+
+xyz@gmail.com
+2. Accuracy
+
+Data should arrive without errors.
+
+Example:
+
+Original:
+
+Password123
+
+Received:
+
+Passw0rd123
+
+This is inaccurate.
+
+3. Timeliness
+
+Data should arrive on time.
+
+Important for:
+
+Video calls
+Online gaming
+Stock trading
+
+Example:
+
+A 5-second delay in a live video call affects communication.
+
+4. Jitter
+
+Jitter means variation in delay between packets.
+
+Example:
+
+Suppose you are in a video call.
+
+Packets arrive like:
+
+Packet 1 → 10 ms
+
+Packet 2 → 20 ms
+
+Packet 3 → 200 ms
+
+The difference causes:
+
+Voice breaks
+Video freezing
+
+This is jitter.
+
+4. Data Representation
+
+Computers cannot understand human language directly.
+
+They understand:
+
+Binary
+
+which consists of:
+
+0 and 1
+Example
+
+Human language:
+
+Hello
+
+Computer representation:
+
+01001000 01100101 01101100 01101100 01101111
+
+Everything is converted into bits.
+
+5. Data Flow Direction
+
+Communication between devices can happen in three ways.
+
+A. Simplex Communication
+Definition
+
+Data travels in only one direction.
+
+Sender  -------------> Receiver
+
+The receiver cannot send data back.
+
+Examples
+Television Broadcast
+TV Station
+
+      ↓
+
+Your TV
+
+You receive signals but cannot send anything back.
+
+Keyboard
+
+Traditional keyboard:
+
+Keyboard
+
+     ↓
+
+Computer
+
+Data only goes from keyboard to computer.
+
+Advantages
+Simple
+Cheap
+Disadvantages
+No two-way communication
+B. Half Duplex Communication
+Definition
+
+Data can travel in both directions, but only one direction at a time.
+
+Device A  --------> Device B
+
+Device A  <-------- Device B
+
+Both can communicate, but not simultaneously.
+
+Example
+Walkie-Talkie
+
+Person A:
+
+"Hello"
+
+(wait)
+
+Person B:
+
+"Hello"
+
+Only one person speaks at a time.
+
+Advantages
+Two-way communication
+Less complex
+Disadvantages
+Slower than full duplex
+C. Full Duplex Communication
+Definition
+
+Data can travel in both directions at the same time.
+
+Device A  <============> Device B
+Examples
+Phone Call
+
+You can:
+
+Speak
+Listen
+
+at the same time.
+
+Modern Ethernet Networks
+
+Most switched networks support full duplex communication.
+
+Comparison
+Type	Direction	Example
+Simplex	One way	TV broadcast
+Half Duplex	Both ways, one at a time	Walkie-talkie
+Full Duplex	Both ways simultaneously	Phone call
+6. Transmission Modes
+
+Another way to classify communication is:
+
+Unicast
+
+One sender → One receiver
+
+Example:
+
+Sending an email to one person.
+
+A --------> B
+Broadcast
+
+One sender → Everyone on the network
+
+Example:
+
+A hub sending data.
+
+       B
+      /
+A -------- C
+      \
+       D
+Multicast
+
+One sender → Selected group
+
+Example:
+
+Live video streaming to subscribed users.
+
+        B
+       /
+A ---- C
+       \
+        D
+7. Bandwidth
+Definition
+
+Bandwidth is the maximum amount of data that can be transmitted through a network in a given time.
+
+Measured in:
+
+bps (bits per second)
+Mbps
+Gbps
+Example
+
+Internet connection:
+
+100 Mbps
+
+means theoretically:
+
+100 million bits can be transmitted per second.
+
+Analogy
+
+Think about a highway.
+
+Bandwidth = Number of lanes
+
+More lanes:
+
+More vehicles
+More traffic capacity
+8. Throughput
+Definition
+
+Throughput is the actual amount of data successfully transferred.
+
+Bandwidth is the capability.
+
+Throughput is the reality.
+
+Example:
+
+Internet plan:
+
+Bandwidth: 100 Mbps
+
+Actual speed:
+
+Throughput: 80 Mbps
+
+because of:
+
+Network congestion
+Distance
+Hardware limitations
+9. Latency
+Definition
+
+Latency is the time taken for data to travel from sender to receiver.
+
+Measured in:
+
+Milliseconds (ms)
+
+Example:
+
+Online gaming:
+
+Low latency:
+
+20 ms
+
+Good experience.
+
+High latency:
+
+300 ms
+
+Lag occurs.
+
+10. Packets
+
+Data is not sent as one huge piece.
+
+It is divided into smaller units called:
+
+Packets
+
+Example:
+
+You send a large video file.
+
+Instead of:
+
+VIDEO FILE
+
+Network sends:
+
+Packet 1
+Packet 2
+Packet 3
+Packet 4
+...
+
+Each packet contains:
+
+Source address
+Destination address
+Data
+Error checking information
+Why Use Packets?
+
+Advantages:
+
+1. Efficient
+
+Multiple users can share the network.
+
+2. Reliable
+
+If one packet is lost, only that packet needs retransmission.
+
+3. Faster
+
+Different packets can take different routes.
+
+11. Circuit Switching vs Packet Switching
+Circuit Switching
+
+A dedicated path is created.
+
+Example:
+
+Traditional telephone networks.
+
+Caller
+ |
+Dedicated Line
+ |
+Receiver
+Packet Switching
+
+Data is divided into packets.
+
+Example:
+
+Internet.
+
+Packet 1 → Route A
+
+Packet 2 → Route B
+
+Packet 3 → Route C
+
+The Internet uses packet switching.
+
+12. Network Performance Factors
+
+Performance depends on:
+
+1. Bandwidth
+
+Higher bandwidth = more data capacity.
+
+2. Latency
+
+Lower latency = faster response.
+
+3. Packet Loss
+
+Lost packets reduce performance.
+
+4. Jitter
+
+Uneven packet arrival affects real-time communication.
+
+Cybersecurity Connection
+
+As a SOC Analyst, you will analyze:
+
+Network Traffic
+
+Example:
+
+Source IP:
+192.168.1.10
+
+Destination IP:
+8.8.8.8
+
+Protocol:
+TCP
+
+Port:
+443
+Packet Analysis
+
+Tools:
+
+Wireshark
+Zeek
+tcpdump
+
+You analyze:
+
+Packets
+Protocols
+Communication patterns
+Detecting Attacks
+
+Examples:
+
+DDoS Attack
+
+Large number of packets sent to overload a server.
+
+Data Exfiltration
+
+Large amount of data leaving the network.
+
+Port Scanning
+
+Attackers send packets to discover open services.
+
+Interview Questions
+1. What are the five components of data communication?
+
+Answer:
+
+Sender
+Receiver
+Message
+Transmission Medium
+Protocol
+2. Difference between bandwidth and throughput?
+
+Bandwidth:
+
+Maximum possible capacity.
+
+Throughput:
+
+Actual data transfer achieved.
+
+3. What is latency?
+
+Time taken for data to travel from source to destination.
+
+4. Difference between half duplex and full duplex?
+
+Half duplex:
+
+Both directions
+One at a time
+
+Full duplex:
+
+Both directions
+Simultaneously
+5. Why is data divided into packets?
+
+Because it improves efficiency, reliability, and network utilization.
+
+Quick Revision
+Data communication = exchange of data between devices.
+Five components:
+Sender
+Receiver
+Message
+Medium
+Protocol
+Good communication requires:
+Delivery
+Accuracy
+Timeliness
+Low jitter
+Communication modes:
+Simplex
+Half Duplex
+Full Duplex
+Data travels in packets.
+Internet uses packet switching.
+Bandwidth ≠ Throughput.
+Latency affects speed and user experience.
