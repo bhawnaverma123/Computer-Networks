@@ -1,0 +1,652 @@
+Chapter 5: Transmission Media (How Data Travels in a Network)
+
+Welcome to Chapter 5: Transmission Media.
+
+In the previous chapters, we learned:
+
+Chapter 1: What networks are.
+Chapter 2: Types of networks (LAN, WAN, etc.).
+Chapter 3: How devices are arranged (topologies).
+Chapter 4: Devices that control communication (switch, router, firewall).
+
+Now the question is:
+
+How does the actual data travel from one device to another?
+
+The answer is:
+
+Transmission Media
+What is Transmission Media?
+
+Transmission Media is the physical or wireless path through which data travels from a sender to a receiver.
+
+In simple words:
+
+Transmission media is the "road" on which network data travels.
+
+Example:
+
+When you send a WhatsApp message:
+
+Your Phone
+
+↓
+
+Wi-Fi Signal
+
+↓
+
+Router
+
+↓
+
+Fiber Cable
+
+↓
+
+Internet
+
+↓
+
+Friend's Phone
+
+The Wi-Fi signal and cables are transmission media.
+
+Types of Transmission Media
+
+Transmission media is divided into two main categories:
+
+                 Transmission Media
+
+                       |
+        --------------------------------
+        |                              |
+   Guided Media                  Unguided Media
+   (Wired)                      (Wireless)
+1. Guided Media (Wired Communication)
+
+In guided media, data travels through a physical cable.
+
+Examples:
+
+Twisted Pair Cable
+Coaxial Cable
+Fiber Optic Cable
+1. Twisted Pair Cable
+What is Twisted Pair Cable?
+
+Twisted Pair Cable consists of pairs of copper wires twisted together.
+
+The twisting helps reduce:
+
+Electromagnetic interference (EMI)
+Signal loss
+Noise
+Structure
+
+A twisted pair cable contains:
+
+Plastic Cover
+
+     |
+     |
+----------------
+|  Copper Wire |
+|  Copper Wire |
+----------------
+
+
+The wires are twisted around each other.
+
+Why Are Wires Twisted?
+
+Imagine two people talking in a noisy room.
+
+If they are close, outside noise affects communication.
+
+Similarly, electrical signals can be disturbed by nearby devices.
+
+Twisting reduces interference.
+
+Types of Twisted Pair Cable
+
+There are two main types:
+
+1. UTP (Unshielded Twisted Pair)
+
+No additional protection.
+
+Example:
+
+Home Ethernet cables
+Office networks
+
+Advantages:
+
+Cheap
+Lightweight
+Easy installation
+
+Disadvantages:
+
+More affected by interference
+2. STP (Shielded Twisted Pair)
+
+Has an additional metallic shield.
+
+Structure:
+
+Outer Cover
+
+↓
+
+Metal Shield
+
+↓
+
+Twisted Copper Wires
+
+Advantages:
+
+Better protection from interference
+More reliable
+
+Disadvantages:
+
+Expensive
+Heavier
+Categories of Twisted Pair Cable
+
+Ethernet cables are classified into categories.
+
+Cat5e
+
+Speed:
+
+Up to 1 Gbps
+
+Frequency:
+
+100 MHz
+Cat6
+
+Speed:
+
+Up to 10 Gbps (short distances)
+
+Frequency:
+
+250 MHz
+Cat6a
+
+Speed:
+
+10 Gbps
+
+Frequency:
+
+500 MHz
+Cat7 / Cat8
+
+Used for:
+
+Data centers
+High-speed networks
+Connector Used
+
+Twisted pair cables usually use:
+
+RJ-45 Connector
+
+Example:
+
+Cable
+ |
+ |
+[||||||||]
+ RJ-45 Plug
+
+Used in:
+
+Computers
+Switches
+Routers
+Real-Life Example
+
+Your computer connected to a switch:
+
+Computer
+
+   |
+   |
+Ethernet Cable
+
+   |
+   |
+Switch
+
+The Ethernet cable is twisted pair cable.
+
+Cybersecurity Importance
+
+Attackers may perform:
+
+Cable tapping
+Physical interception
+
+Security measures:
+
+Secure cable rooms
+Network access control
+Physical security
+2. Coaxial Cable
+What is Coaxial Cable?
+
+Coaxial cable is a copper cable designed to carry high-frequency signals.
+
+It has multiple layers.
+
+Structure:
+
+Outer Protective Layer
+
+        |
+        |
+Metal Shield
+
+        |
+        |
+Insulator
+
+        |
+        |
+Copper Core
+Why is it called Coaxial?
+
+Because all layers share the same axis.
+
+"Co" = same
+
+"Axial" = axis
+
+Uses of Coaxial Cable
+
+Used in:
+
+Cable TV
+Internet connections
+CCTV systems
+Radio transmission
+Advantages
+Better shielding than twisted pair
+Less interference
+Longer distance
+Disadvantages
+Bulkier
+More expensive
+Lower speed compared to fiber
+Real-Life Example
+
+Traditional cable TV connection:
+
+Cable Provider
+
+      |
+
+Coaxial Cable
+
+      |
+
+Television
+Cybersecurity Importance
+
+Cable networks can be vulnerable to:
+
+Signal interception
+Unauthorized physical access
+
+Proper physical security is required.
+
+3. Fiber Optic Cable
+
+Now the most important modern transmission medium.
+
+What is Fiber Optic Cable?
+
+Fiber optic cable transfers data using light signals instead of electrical signals.
+
+It uses extremely thin strands of glass or plastic.
+
+Structure
+Outer Jacket
+
+      |
+      |
+Cladding
+
+      |
+      |
+Glass Core
+
+      |
+      |
+Light travels here
+How Does It Work?
+
+Example:
+
+You send a message:
+
+Computer
+
+↓
+
+Electrical Signal
+
+↓
+
+Optical Transmitter
+
+↓
+
+Light Pulse
+
+↓
+
+Fiber Cable
+
+↓
+
+Optical Receiver
+
+↓
+
+Electrical Signal
+
+↓
+
+Destination
+Types of Fiber Optic Cable
+1. Single Mode Fiber (SMF)
+
+Characteristics:
+
+Very thin core
+One light path
+Very long distance
+
+Used for:
+
+Internet backbone
+Undersea cables
+Telecom networks
+
+Distance:
+
+Hundreds of kilometers.
+
+2. Multi Mode Fiber (MMF)
+
+Characteristics:
+
+Larger core
+Multiple light paths
+
+Used for:
+
+Data centers
+Campus networks
+
+Shorter distance than single mode.
+
+Advantages of Fiber Optic
+1. Extremely High Speed
+
+Supports:
+
+Gigabit speeds
+Terabit speeds
+2. Long Distance
+
+Can transmit data over huge distances.
+
+3. No Electromagnetic Interference
+
+Because it uses light, electrical noise does not affect it.
+
+4. More Secure
+
+It is harder to intercept compared to copper cables.
+
+Disadvantages
+Expensive installation
+Difficult to repair
+Requires specialized equipment
+Real-Life Example
+
+Internet backbone:
+
+India
+
+|
+
+Undersea Fiber Cable
+
+|
+
+USA
+
+|
+
+Internet Data Centers
+
+Most international Internet communication uses fiber optic cables.
+
+Unguided Media (Wireless)
+
+In unguided media, data travels through air.
+
+Examples:
+
+Radio Waves
+Microwave
+Infrared
+Satellite
+Wi-Fi
+1. Radio Waves
+
+Used in:
+
+Wi-Fi
+Bluetooth
+Mobile networks
+
+Advantages:
+
+Long range
+Can pass through walls
+
+Disadvantages:
+
+More interference
+Security risks
+2. Microwave Communication
+
+Uses high-frequency radio waves.
+
+Used for:
+
+Mobile towers
+Point-to-point communication
+
+Requires:
+
+Line of sight
+
+Example:
+
+Tower A
+
+    )))))
+
+      )))))
+
+Tower B
+3. Infrared
+
+Uses infrared light.
+
+Used in:
+
+TV remotes
+Short-range communication
+
+Limitations:
+
+Cannot pass through walls
+Very short distance
+4. Satellite Communication
+
+Uses satellites orbiting Earth.
+
+Example:
+
+Earth Station
+
+      ↑
+
+Satellite
+
+      ↓
+
+Remote Location
+
+Used for:
+
+GPS
+Satellite internet
+Television broadcasting
+5. Wi-Fi
+
+Wi-Fi uses radio waves to connect devices wirelessly.
+
+Common frequencies:
+
+2.4 GHz
+
+Advantages:
+
+Longer range
+
+Disadvantages:
+
+More interference
+5 GHz
+
+Advantages:
+
+Faster speed
+
+Disadvantages:
+
+Shorter range
+6 GHz
+
+Used in newer Wi-Fi standards.
+
+Wired vs Wireless Comparison
+Feature	Wired	Wireless
+Speed	Higher	Lower generally
+Security	More secure	More exposed
+Mobility	Limited	Excellent
+Installation	More difficult	Easier
+Interference	Less	More
+Cost	Higher initially	Lower initially
+Transmission Media in Real Networks
+
+A typical enterprise network:
+
+Laptop
+
+↓
+
+Wi-Fi
+
+↓
+
+Access Point
+
+↓
+
+Ethernet Cable
+
+↓
+
+Switch
+
+↓
+
+Fiber Cable
+
+↓
+
+Core Router
+
+↓
+
+Internet
+
+Different media are used at different places.
+
+Cybersecurity Perspective
+
+Transmission media security includes:
+
+Physical Attacks
+Cable cutting
+Cable tapping
+Unauthorized device connection
+Wireless Attacks
+Wi-Fi password cracking
+Evil Twin attacks
+Rogue Access Points
+Packet sniffing
+
+Security measures:
+
+WPA3 encryption
+Network monitoring
+Physical security
+Port security
+Interview Questions
+1. What is transmission media?
+
+Answer:
+Transmission media is the path through which data travels from sender to receiver in a network.
+
+2. Difference between UTP and STP?
+UTP	STP
+No shielding	Has shielding
+Cheaper	More expensive
+More interference	Less interference
+3. Why is fiber optic faster than copper?
+
+Because fiber uses light signals, which travel faster and are not affected by electromagnetic interference.
+
+4. Which cable is used for Internet backbone?
+
+Fiber optic cable.
+
+5. Why is wireless communication less secure?
+
+Because signals travel through open air and can potentially be intercepted.
+
+Quick Revision
+Transmission media = path for data movement.
+Two categories:
+Guided (wired)
+Unguided (wireless)
+Twisted pair → LAN networks.
+Coaxial → Cable TV and CCTV.
+Fiber optic → Internet backbone and data centers.
+Wireless → Wi-Fi, Bluetooth, satellite.
